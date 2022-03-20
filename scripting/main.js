@@ -4,7 +4,7 @@ let resultDiv = document.getElementById("result-div")
 let startBtn = document.getElementById("start-btn")
 let playAgainBtn = document.getElementById("play-again-btn")
 let p = document.getElementById("sample-text-p")
-let string = "Hello, this is a typing test to test your typing speed and maybe even errors?"
+let string = "The main body of a book or other piece of writing, as distinct from other material such as notes, appendices, and illustrations."
 let sumArray = []
 let timer = 0
 
@@ -28,7 +28,7 @@ function changeAppState(state) {
         case 2:
             timer = (Date.now() - timer)/1000
             window.removeEventListener("keydown", userInputListener)
-            console.log(timer, string.split(" ").length, (string.split(" ").length/timer * 60))
+            document.getElementById("result-h1").innerHTML = `Your typing speed is <span class="highlight">${(string.split(" ").length/timer * 60).toFixed(1)} WPM</span>`
             playAgainBtn.onclick = function () {
                 changeAppState(0)
             }

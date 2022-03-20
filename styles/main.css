@@ -26,6 +26,11 @@ h1 {
     font-family: "Yu Gothic", sans-serif;
 }
 
+.highlight {
+    color: lightcoral;
+    font-weight: bold;
+}
+
 .correct {
     color: white;
     font-size: 32px;
