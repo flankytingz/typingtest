@@ -109,41 +109,7 @@ function renderHTML() {
 }
 /*
 states
-    1 = started
-    2 = showing result
-    0 = main screen
- */
-
-/*
-globals:
-let charNum = 1
-let newTestString = ""
-let previousCharCorrect = false
-
-    let str0 = testString.slice(0,charNum)
-    console.log(str0,str0.endsWith(event.key),str0.length)
-    if (str0.endsWith(event.key)) {
-        if (previousCharCorrect) {
-            newTestString += `${event.key}`
-        } else if (str0.length === 1) {
-            newTestString += `<span class="correct">${event.key}`
-        } else {
-            newTestString += `</span><span class="correct">${event.key}`
-        }
-        previousCharCorrect = true
-    } else {
-        if (previousCharCorrect) {
-            newTestString += `</span><span class="incorrect">${event.key}`
-        } else if (str0.length === 1) {
-            newTestString += `<span class="incorrect">${event.key}`
-        } else {
-            newTestString += `${event.key}`
-        }
-        previousCharCorrect = false
-    }
-    console.log(newTestString)
-    p.innerHTML = newTestString + `</span><span class="undone">${testString.slice(charNum)}</span>`
-    charNum++
-
-    working code but cant handle other keys
+    0: main screen
+    1: testing screen
+    2: result screen
  */
