@@ -1,0 +1,61 @@
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dark-bg {
+    background: #252525;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+h1 {
+    color: gold;
+    font-size: 56px;
+    font-family: "Yu Gothic", sans-serif;
+}
+
+.correct {
+    color: white;
+    font-size: 32px;
+    font-family: "Yu Gothic", sans-serif;
+}
+
+.incorrect {
+    color: lightcoral;
+    font-size: 32px;
+    font-family: "Yu Gothic", sans-serif;
+}
+
+.undone {
+    color: lightslategray;
+    font-size: 32px;
+    font-family: "Yu Gothic", sans-serif;
+}
+
+#start-btn {
+    width: 200px;
+    height: 50px;
+
+    font-size: 30px;
+    color: antiquewhite;
+
+    background: limegreen;
+    outline: 2px darkgrey solid;
+    border: none;
+    border-radius: 10px;
+}
+#start-btn:hover {
+    outline: 4px darkgrey solid;
+}
