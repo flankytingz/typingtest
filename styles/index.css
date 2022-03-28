@@ -35,32 +35,46 @@ h1 {
     color: white;
     font-size: 32px;
     font-family: "Yu Gothic", sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-underline-offset: 20%;
 }
 
 .incorrect {
     color: lightcoral;
     font-size: 32px;
     font-family: "Yu Gothic", sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: lightcoral;
+    text-underline-offset: 20%;
 }
 
 .undone {
     color: lightslategray;
     font-size: 32px;
     font-family: "Yu Gothic", sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: lightslategray;
+    text-underline-offset: 20%;
+}
+
+#sample-text-p {
+    text-decoration-line: underline;
+    text-decoration-color: lightslategray;
+    text-underline-offset: 20%;
 }
 
 button {
     width: 200px;
     height: 50px;
-
+    
     font-size: 30px;
     color: antiquewhite;
-
+    
     background: limegreen;
-    outline: 2px darkgrey solid;
-    border: none;
+    border: 2px darkgrey solid;
     border-radius: 10px;
 }
 button:hover {
-    outline: 4px darkgrey solid;
+    border: 4px darkgrey solid;
 }
